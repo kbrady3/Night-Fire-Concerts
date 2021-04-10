@@ -1,0 +1,19 @@
+.banner{
+  background-image: url("Images/fireByDavidWilson1949.jpg");
+  background-blend-mode: lighten;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 706px; /*Must change height for new picture once placeholder removed*/
+}
+
+.navbar-nav.navbarCenter {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+    margin-top: 50px;
+}
+
+.nav-item{
+  padding: 25px;
+  font-size: x-large;
+}
