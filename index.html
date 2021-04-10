@@ -13,65 +13,137 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="banner">
-      <nav class="navbar navbar-expand-md navbar-dark static-top">
-        <!--<a class="navbar-brand" href="index.html">Night Fire Concerts</a>-->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-          <span class="navbar-toggler-icon navbar-dark"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="collapsibleNavbar">
-          <ul class="navbar-nav navbarCenter">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+    <video autoplay muted loop id="backgroundVideo">
+      <source src="fire.mp4" type="video/mp4">
+    </video>
+    <nav class="navbar fixed-top navbar-expand-md navbar-dark navBackground">
+      <!--<a class="navbar-brand" href="index.html">Night Fire Concerts</a>-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon navbar-dark"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav navbarCenter">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="index.html#tickets">Tickets</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="tickets.html">Tickets</a>
-              </li>
-            <li class="nav-item">
-              <a class="nav-link" href="music.html">Music</a>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#music">Music</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#donate">Donate</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="index.html#info">Info</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="donate.html">Donate</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="info.html">Info</a>
-              </li>
-          </ul>
-        </div>
+        </ul>
+      </div>
     </nav>
-      <br><br><br><br><br><br><br><br><br><br>
-      <h1 style="color:white;text-align:center">Night Fire Concerts</h1>
-    </div>
-    <br>
-    <div class="">
 
-      <!--Matt Maher-->
+    <div class="container-fluid padTop">
       <div class="row justify-content-center">
-        <div class="col-8">
-          <a href="music.html#maher"><img class="img-fluid" src="Images/MattMaher/maher1.jpg" alt="Matt Maher"></a>
+        <div class="col">
+          <div class="textSection" id="welcome">
+            <h1>Welcome to Night Fire Concerts</h1>
+            <br>
+            <p>Scroll down</p>
+          </div>
         </div>
       </div>
 
-      <br>
+      <div class="col textSection" id="introducing">
+        <h1>Introducing...</h1>
+        <br><br><br>
+      </div>
 
-      <!--First Encounter-->
-      <div class="row justify-content-center">
-        <div class="col-3">
-          <a href="music.html#firstEncounter"><img class="d-block w-100" src="personPlaceholder.jpg" alt=""></a>
+      <div id="artistsHome">
+        <!--Matt Maher-->
+        <div class="row justify-content-center">
+          <div class="col-11">
+            <a href="index.html#maher"><img class="img-fluid" src="Images/MattMaher/maher1.jpg" alt="Matt Maher"></a>
+          </div>
         </div>
 
-        <!--Matt Baird-->
-        <div class="col-3">
-          <a href="music.html#baird"><img class="d-block w-100" src="Images/MattBaird/baird2.jpg" alt="Matt Baird"></a>
+        <br>
+
+        <!--First Encounter-->
+        <div class="row justify-content-center">
+          <div class="col-4">
+            <a href="index.html#firstEncounter"><img class="d-block w-100" src="personPlaceholder.jpg" alt=""></a>
+          </div>
+
+          <!--Matt Baird-->
+          <div class="col-4">
+            <a href="index.html#baird"><img class="d-block w-100" src="Images/MattBaird/baird2.jpg" alt="Matt Baird"></a>
+          </div>
+
+          <!--JMMJ-->
+          <div class="col-4">
+            <a href="index.html#jmmj"><img class="d-block w-100" src="Images/JMMJ/jmmj1.jpg" alt="JMMJ"></a>
+          </div>
         </div>
 
-        <!--JMMJ-->
-        <div class="col-3">
-          <a href="music.html#jmmj"><img class="d-block w-100" src="Images/JMMJ/jmmj1.jpg" alt="JMMJ"></a>
+      </div>
+
+      <br><br>
+
+      <div id="tickets">
+        <div class="row justify-content-center">
+          <div class="col plainBackground">
+            <h1>Buy Tickets Now</h1>
+            <button>Buy Now</button>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div id="music">
+        <div class="row justify-content-center">
+          <div class="col plainBackground">
+            <h1 id="maher">Matt Maher</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RfvvEKMPGhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Since his 2008 major label debut, Matt Maher has become a staple in the artistic and songwriting community. A nine time-GRAMMY® nominee and three time-GMA Dove Award winner, he has garnered multiple radio successes, writing and recording songs such as his Top 5 CCLI song “Lord, I Need You” and the chart-topping radio single “Because He Lives (Amen).” Along with other hits such as “Hold Us Together,” “Christ Is Risen,” “All The People Said Amen,” and “Your Grace Is Enough,” Maher has written or co-written five No. 1 radio singles.</p>
+            <p>Penning numerous songs recorded by Chris Tomlin, Crowder, Third Day, Jeremy Camp, Matt Redman, Hillsong, Casting Crowns, Meredith Andrews, Jesus Culture, Jars of Clay, and Passion, he’s had multiple titles on the CCLI chart’s Top 500 list. With career album sales of more than 550,000 units to date, Maher was recently awarded his first RIAA Platinum certification for his popular single “Lord, I Need You.” He’s released nine studio albums, including his 2017 GRAMMY-nominated album Echoes. He also released his first Christmas album and children’s book, both titled The Advent of Christmas, during the 2018 holiday season.</p>
+
+            <h1 id="firstEncounter">First Encounter</h1>
+
+            <h1 id="baird">Matt Baird</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/fB4Has65n40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Matt Baird, lead singer of the Christian Rock band Spoken. In 1996, I felt that God was leading me to start a band, and use music as a tool to share the hope of Jesus with the world. I’m grateful for each day that I get to write music, perform music with Spoken, or as a solo acoustic artist. I also love it when I have the opportunity to play acoustic shows, or do guest worship at churches across the world. I know that it’s only the grace of Jesus, the support of my family, as well as each and every person that prays, comes to shows, or could be reading this now, that makes any of this possible. I’m forever grateful.</p>
+
+            <h1 id="jmmj">JMMJ</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_afxhF9qNJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>JMMJ is a musical duo out of West Des Moines, Iowa: Catholic men who write and produce their own unique songs inspired by faith. Joel Magruder II is the instrumental producer and vocalist; Matt Jerome is the lyricist and vocalist. JMMJ put out their first self-titled, self-released album in 2016. Their second studio album “Two Part” was released in 2019. JMMJ’s newer songs emphasize themes of faith in God and loving our neighbors - in a genre of music that is often to the contrary. They combine hip/hop and electronic instruments, creating indelible sounds. Spreading God’s good word through music is their goal and passion. JMMJ brings high energy to their performances and loves to fire up the audience!</p>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div id="donate">
+        <div class="row justify-content-center">
+          <div class="col plainBackground">
+            <h1>Donate Now</h1>
+            <button>Donate Now</button>
+          </div>
+        </div>
+      </div>
+
+      <br><br>
+
+      <div id="info">
+        <div class="row justify-content-center">
+          <div class="col plainBackground">
+            <h1>Amphitheater Parking</h1>
+            <a href="https://www.wdm.iowa.gov/home/showpublisheddocument?id=32675">Click here</a>
+          </div>
         </div>
       </div>
 
     </div>
-    <br>
+
   </body>
 </html>

@@ -1,9 +1,46 @@
-.banner{
+/*
+body{
   background-image: url("Images/fireByDavidWilson1949.jpg");
-  background-blend-mode: lighten;
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
-  height: 706px; /*Must change height for new picture once placeholder removed*/
+}
+*/
+
+#backgroundVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+#introducing{
+  margin-top: 60%;
+}
+
+#artistsHome{
+  margin-top: 60%;
+}
+
+.plainBackground{
+  background-color: #b6b5b4;
+  text-align: center;
+}
+
+.padTop{
+  padding-top: 75px;
+}
+
+.banner{
+  height: 1000px;
+}
+
+#welcome{
+  margin-top: 15%;
+}
+
+.navBackground{
+
 }
 
 .navbar-nav.navbarCenter {
@@ -16,4 +53,15 @@
 .nav-item{
   padding: 25px;
   font-size: x-large;
+}
+
+.textSection{
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  color: white;
+}
+
+.opaqueWhiteBackground{
+  background-color: rgba(255, 255, 255, 0.25);
 }
