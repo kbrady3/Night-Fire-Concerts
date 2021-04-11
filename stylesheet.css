@@ -47,7 +47,6 @@ body{
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
-    margin-top: 50px;
 }
 
 .nav-item{
