@@ -104,7 +104,7 @@
 
       <div id="music">
         <div class="row justify-content-center">
-          <div class="col plainBackground">
+          <div class="col plainBackground" id="musicCol">
             <h1 id="maher">Matt Maher</h1>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/RfvvEKMPGhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <p>Since his 2008 major label debut, Matt Maher has become a staple in the artistic and songwriting community. A nine time-GRAMMY® nominee and three time-GMA Dove Award winner, he has garnered multiple radio successes, writing and recording songs such as his Top 5 CCLI song “Lord, I Need You” and the chart-topping radio single “Because He Lives (Amen).” Along with other hits such as “Hold Us Together,” “Christ Is Risen,” “All The People Said Amen,” and “Your Grace Is Enough,” Maher has written or co-written five No. 1 radio singles.</p>
@@ -127,7 +127,7 @@
 
       <div id="donate">
         <div class="row justify-content-center">
-          <div class="col plainBackground">
+          <div class="col plainBackground" id="donateCol">
             <h1>Donate Now</h1>
             <button>Donate Now</button>
           </div>
@@ -138,7 +138,7 @@
 
       <div id="info">
         <div class="row justify-content-center">
-          <div class="col plainBackground">
+          <div class="col plainBackground" id="infoCol">
             <h1>Amphitheater Parking</h1>
             <a href="https://www.wdm.iowa.gov/home/showpublisheddocument?id=32675">Click here</a>
           </div>
@@ -150,8 +150,22 @@
   </body>
   <script type="text/javascript">
     var screenHeight = screen.height; //Returns a number without px at the end
+
     var tickets = document.getElementById('ticketsCol');
-    tickets.style.height = screenHeight + 'px';
+    tickets.style.minHeight = screenHeight + 'px';
     tickets.style.backgroundColor = '#3a3a3a';
+
+    var music = document.getElementById('musicCol');
+    music.style.minHeight = screenHeight + 'px';
+    music.style.backgroundColor = '#3a3a3a';
+
+    var donate = document.getElementById('donateCol');
+    donate.style.minHeight = screenHeight + 'px';
+    donate.style.backgroundColor = '#3a3a3a';
+
+    var info = document.getElementById('infoCol');
+    info.style.minHeight = screenHeight + 'px';
+    info.style.backgroundColor = '#3a3a3a';
+
   </script>
 </html>
