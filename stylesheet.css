@@ -2,6 +2,7 @@ body{
   color: white;
 }
 
+/*
 #backgroundVideo {
   position: fixed;
   right: 0;
@@ -9,6 +10,7 @@ body{
   min-width: 100%;
   min-height: 100%;
 }
+*/
 
 #welcome{
   margin-top: 10%;
@@ -20,6 +22,11 @@ body{
 
 #artistsHome{
   margin-top: 30%;
+}
+
+#julie{
+  width: 25%;
+  margin-right: 10px;
 }
 
 .plainBackground{
@@ -50,15 +57,24 @@ body{
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
+    padding-top: 50px;
 }
 
 .nav-item{
   padding: 25px;
-  font-size: x-large;
+  text-align: center;
 }
 
 .textSection{
   text-align: center;
   width: 75%;
   margin: 0 auto;
+}
+
+.tile1{
+  background-color: skyblue;
+}
+
+.tile2{
+  background-color: #C5A1FF;
 }
