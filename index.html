@@ -17,8 +17,14 @@
     <!--<video autoplay muted loop id="backgroundVideo">
       <source src="fire.mp4" type="video/mp4">
     </video>-->
-    <nav class="navbar fixed-top navbar-expand-md navbar-light navBackground">
-      <!--<a class="navbar-brand" href="index.html"><img src="Images/Logo/blackHorizontal.png" style="width:250px" alt="Logo"></a>-->
+    <div class="alert fixed-top alert-primary alert-dismissible fade show" role="alert" id="alertMessage">
+      <a href="#"><strong>Click here</strong> for free tickets and Night Fire Concert updates!</a>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="moveNavUp()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light navBackground" id="navigation">
+      <a class="navbar-brand" href="index.html"><img src="Images/Logo/blackHorizontal.png" style="width:250px" alt="Logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon navbar-light"></span>
       </button>
@@ -27,21 +33,41 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Info
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="nav-link" href="index.html#about">About</a>
+              <a class="nav-link" href="index.html#covid">COVID-19</a>
+              <a class="nav-link" href="index.html#info">Location</a>
+              <a class="nav-link" href="index.html#music">FAQ</a>
+              <a class="nav-link" href="index.html#foodTrucks">Food</a>
+              <a class="nav-link" href="index.html#sponsors">Sponsors</a>
+            </div>
+          </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#about">About</a>
+            <a class="nav-link" href="index.html#music">Music</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html#music" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Music
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="nav-link" href="index.html#music">Our Music</a>
+              <a class="nav-link" href="index.html#moreMusic">Want more music?</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#volunteer">Volunteer</a>
           </li>
           <li class="nav-item">
               <a class="nav-link" href="index.html#tickets">Tickets</a>
             </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#music">Music</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="index.html#donate">Donate</a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="index.html#info">Info</a>
-            </li>
+
         </ul>
       </div>
     </nav>
@@ -50,11 +76,11 @@
       <div class="row justify-content-center">
         <div class="col">
           <div class="textSection" id="welcome">
-            <h1>Welcome to</h1>
-            <img src="Images/Logo/blackTextOnlyLogo.png" style="width:350px" alt="Logo">
+            <img src="Images/Logo/blackTextOnlyLogo.png" style="width:250px" alt="Logo">
             <br><br>
-            <p>June 12, 2021 &#9733; 6:00 PM</p>
-            <p>4100 Mills Civic Parkway, West Des Moines, IA</p>
+            <h4>Presents</h4>
+            <h1>Matt Maher</h1>
+            <p>Coming Together in Prayer and Worship</p>
             <br>
             <p>Scroll down</p>
           </div>
@@ -135,14 +161,45 @@
         </div>
       </div>
 
+      <div id="volunteer">
+        <div class="row justify-content-center">
+          <div class="col plainBackground">
+            <h1>Volunteer</h1>
+            <p><a href="#">Volunteer for Night Fire!</a></p>
+            <h5>If I volunteer, can I see/hear the concert?</h5>
+            <h5>What needs to be done?</h5>
+            <h5>Shifts</h5>
+            <h5><a href="#">Order your free Night Fire t-shirt for volunteers</a></h5>
+            <h5>What happens after I volunteer?</h5>
+            <h5>Where do I park?</h5>
+            <h5>Where do I enter?</h5>
+            <h5>Should I bring anything?</h5>
+            <p>Remember to wear your Night Fire t-shirt.</p>
+          </div>
+
+        </div>
+      </div>
+
       <div id="about">
         <div class="row justify-content-center">
           <div class="col plainBackground">
             <h1>About</h1>
-            <p style="text-align:justify">
-              How did it start?
-              <img src="Images/About/JulieNelson.jpg" class="float-left" id="julie" alt="Julie Nelson">
-            </p>
+
+            <h5>What is NightFire Concerts?</h5>
+            <h5>How did it start?</h5>
+            <h5>When did it begin?</h5>
+            <h5>Who started it?</h5>
+              <p>
+                Julie Nelson
+                <img src="Images/About/JulieNelson.jpg" id="julie" alt="Julie Nelson">
+              </p>
+            <h5>Why did it begin?</h5>
+            <h5>Is it a one-time event?</h5>
+            <h5>Do you sell merchandise?</h5>
+            <h5>Why a “Pray & Worship” Concert?</h5>
+            <h5>The Music</h5>
+            <h5>Prayer Teams</h5>
+            <h5>"Let go and let God"</h5>
 
           </div>
         </div>
@@ -151,8 +208,13 @@
       <div id="donate">
         <div class="row justify-content-center">
           <div class="col plainBackground" id="donateCol">
-            <h1>Donate Now</h1>
-            <button>Donate Now</button>
+            <h1>Donations</h1>
+            <h5>Is Night Fire a non-profit?</h5>
+            <h5>Are donations tax-deductible?</h5>
+            <h5>How can I help NightFire bring Christians together to pray and worship?</h5>
+            <h5>Where does the money go?</h5>
+            <h5>How do I become involved next year?</h5>
+            <h5>Can I donate year-round?</h5>
           </div>
         </div>
       </div>
@@ -160,13 +222,30 @@
       <div id="info">
         <div class="row justify-content-center">
           <div class="col plainBackground" id="infoCol">
-            <h1>Amphitheater Parking</h1>
-            <a href="https://www.wdm.iowa.gov/home/showpublisheddocument?id=32675">Click here or see below</a>
-            <br><br>
-            <img src="Images/Info/amphitheaterMap.jpg" class="img-fluid" alt="Amphitheater">
-            <br><br>
-            <h1>Food Trucks</h1>
-            <p>We will bring in a variety of food trucks.</p>
+            <h1>Information</h1>
+            <h6>Location</h6>
+            <div style="overflow:hidden;max-width:100%;width:500px;height:500px;">
+              <div style="height:100%; width:100%;max-width:100%;">
+                <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=4100+Mills+Civic+Parkway,+West+Des+Moines,+IA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+              </div>
+            </div>
+            <h6>Site Map</h6>
+            <h6>Parking</h6>
+              <a href="https://www.wdm.iowa.gov/home/showpublisheddocument?id=32675">Click here or see below</a>
+              <br>
+              <img src="Images/Info/amphitheaterMap.jpg" class="img-fluid" alt="Amphitheater">
+            <h6>Enter/Exit</h6>
+            <h6>No Alcohol</h6>
+            <p>Can bring *small* soft-sided coolers or over-the-shoulder coolers.</p>
+            <h6 id="foodTrucks">Food Trucks</h6>
+          </div>
+        </div>
+      </div>
+
+      <div id="covid">
+        <div class="row justify-content-center">
+          <div class="col plainBackground">
+            <h1>COVID-19 Precautions</h1>
           </div>
         </div>
       </div>
@@ -185,24 +264,14 @@
     </footer>
   </body>
   <script type="text/javascript">
-  /*
-    var screenHeight = screen.height; //Returns a number without px at the end
+    var navigation = document.getElementById('navigation');
+    var alertMessage = document.getElementById('alertMessage');
+    if(alertMessage.classList.contains('show')){
+      navigation.style.marginTop = '50px';
+    }
 
-    var tickets = document.getElementById('ticketsCol');
-    tickets.style.minHeight = screenHeight + 'px';
-    tickets.style.backgroundColor = '#6b6b6b';
-
-    var music = document.getElementById('musicCol');
-    music.style.minHeight = screenHeight + 'px';
-    music.style.backgroundColor = '#3a3a3a';
-
-    var donate = document.getElementById('donateCol');
-    donate.style.minHeight = screenHeight + 'px';
-    donate.style.backgroundColor = '#6b6b6b';
-
-    var info = document.getElementById('infoCol');
-    info.style.minHeight = screenHeight + 'px';
-    info.style.backgroundColor = '#3a3a3a';
-  */
+    function moveNavUp(){
+      navigation.style.marginTop = '0px';
+    }
   </script>
 </html>

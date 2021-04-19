@@ -53,15 +53,17 @@ body{
   height: 1000px;
 }
 
+/*
 .navbar-nav.navbarCenter {
     position: absolute;
     left: 50%;
     transform: translatex(-50%);
     padding-top: 50px;
 }
+*/
 
 .nav-item{
-  padding: 25px;
+  padding: 15px;
   text-align: center;
 }
 
