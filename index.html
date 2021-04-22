@@ -14,9 +14,6 @@
   </head>
 
   <body>
-    <!--<video autoplay muted loop id="backgroundVideo">
-      <source src="fire.mp4" type="video/mp4">
-    </video>-->
     <div class="alert fixed-top alert-primary alert-dismissible fade show" role="alert" id="alertMessage">
       <a href="#"><strong>Click here</strong> for free tickets and Night Fire Concert updates!</a>
       <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="moveNavUp()">
@@ -33,46 +30,44 @@
           <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="info.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Info
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="nav-link" href="index.html#about">About</a>
-              <a class="nav-link" href="index.html#covid">COVID-19</a>
-              <a class="nav-link" href="index.html#info">Location</a>
-              <a class="nav-link" href="index.html#music">FAQ</a>
-              <a class="nav-link" href="index.html#foodTrucks">Food</a>
-              <a class="nav-link" href="index.html#sponsors">Sponsors</a>
+              <a class="nav-link" href="info.html#covid">COVID-19</a>
+              <a class="nav-link" href="info.html#info">Location</a>
+              <a class="nav-link" href="info.html#faq">FAQ</a>
+              <a class="nav-link" href="info.html#foodTrucks">Food</a>
+              <a class="nav-link" href="info.html#sponsors">Sponsors</a>
             </div>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="index.html#music">Music</a>
-          </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="index.html#music" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="music.html" id="navbarDropdownMenuLink2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Music
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <a class="nav-link" href="index.html#music">Our Music</a>
-              <a class="nav-link" href="index.html#moreMusic">Want more music?</a>
+              <a class="nav-link" href="music.html#music">Our Music</a>
+              <a class="nav-link" href="music.html#moreMusic">Want more music?</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#volunteer">Volunteer</a>
+            <a class="nav-link" href="volunteer.html">Volunteer</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="index.html#tickets">Tickets</a>
+              <a class="nav-link" href="tickets.html">Tickets</a>
             </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.html#donate">Donate</a>
+            <a class="nav-link" href="donate.html">Donate</a>
           </li>
-
         </ul>
       </div>
     </nav>
 
-    <div class="container-fluid padTop">
+    <div class="container-fluid padTop" id="mainContent">
       <div class="row justify-content-center">
         <div class="col">
           <div class="textSection" id="welcome">
@@ -91,164 +86,30 @@
         <!--Matt Maher-->
         <div class="row justify-content-center">
           <div class="col-11">
-            <a href="index.html#maher"><img class="img-fluid" src="Images/MattMaher/maher1.jpg" alt="Matt Maher"></a>
+            <a href="music.html#maher"><img class="img-fluid" src="Images/MattMaher/maher1.jpg" alt="Matt Maher"></a>
           </div>
-        </div>
-
-        <br>
-
+        </div><br>
 
         <div class="row justify-content-center">
-
           <!--JMMJ-->
           <div class="col-4">
-            <a href="index.html#jmmj"><img class="d-block w-100" src="Images/JMMJ/jmmj1.jpg" alt="JMMJ"></a>
+            <a href="music.html#jmmj"><img class="d-block w-100" src="Images/JMMJ/jmmj1.jpg" alt="JMMJ"></a>
           </div>
 
           <!--Matt Baird-->
           <div class="col-4">
-            <a href="index.html#baird"><img class="d-block w-100" src="Images/MattBaird/baird2.jpg" alt="Matt Baird"></a>
+            <a href="music.html#baird"><img class="d-block w-100" src="Images/MattBaird/baird2.jpg" alt="Matt Baird"></a>
           </div>
 
           <!--First Encounter-->
           <div class="col-4">
-            <a href="index.html#firstEncounter"><img class="d-block w-100" src="personPlaceholder.jpg" alt=""></a>
+            <a href="music.html#firstEncounter"><img class="d-block w-100" src="personPlaceholder.jpg" alt=""></a>
           </div>
-
         </div>
 
       </div>
 
       <br><br>
-
-      <div id="tickets">
-        <div class="row justify-content-center">
-          <div class="col plainBackground" id="ticketsCol">
-            <h1>Buy Tickets Now</h1>
-            <button>Buy Now</button>
-          </div>
-        </div>
-      </div>
-
-      <div id="music">
-        <div class="row justify-content-center">
-            <div class="plainBackground" id="musicCol">
-              <div class="col">
-                <h1 id="maher">Matt Maher</h1>
-                <iframe style="width:100%;" src="https://www.youtube.com/embed/RfvvEKMPGhA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p>Since his 2008 major label debut, Matt Maher has become a staple in the artistic and songwriting community. A nine time-GRAMMY® nominee and three time-GMA Dove Award winner, he has garnered multiple radio successes, writing and recording songs such as his Top 5 CCLI song “Lord, I Need You” and the chart-topping radio single “Because He Lives (Amen).” Along with other hits such as “Hold Us Together,” “Christ Is Risen,” “All The People Said Amen,” and “Your Grace Is Enough,” Maher has written or co-written five No. 1 radio singles.</p>
-                <p>Penning numerous songs recorded by Chris Tomlin, Crowder, Third Day, Jeremy Camp, Matt Redman, Hillsong, Casting Crowns, Meredith Andrews, Jesus Culture, Jars of Clay, and Passion, he’s had multiple titles on the CCLI chart’s Top 500 list. With career album sales of more than 550,000 units to date, Maher was recently awarded his first RIAA Platinum certification for his popular single “Lord, I Need You.” He’s released nine studio albums, including his 2017 GRAMMY-nominated album Echoes. He also released his first Christmas album and children’s book, both titled The Advent of Christmas, during the 2018 holiday season.</p>
-              </div>
-
-              <div class="col">
-                <h1 id="baird">Matt Baird</h1>
-                <iframe style="width:100%;" src="https://www.youtube.com/embed/fB4Has65n40" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p>Matt Baird, lead singer of the Christian Rock band Spoken. In 1996, I felt that God was leading me to start a band, and use music as a tool to share the hope of Jesus with the world. I’m grateful for each day that I get to write music, perform music with Spoken, or as a solo acoustic artist. I also love it when I have the opportunity to play acoustic shows, or do guest worship at churches across the world. I know that it’s only the grace of Jesus, the support of my family, as well as each and every person that prays, comes to shows, or could be reading this now, that makes any of this possible. I’m forever grateful.</p>
-              </div>
-
-              <div class="col">
-                <h1 id="jmmj">JMMJ</h1>
-                <iframe style="width:100%;" src="https://www.youtube.com/embed/_afxhF9qNJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <p>JMMJ is a musical duo out of West Des Moines, Iowa: Catholic men who write and produce their own unique songs inspired by faith. Joel Magruder II is the instrumental producer and vocalist; Matt Jerome is the lyricist and vocalist. JMMJ put out their first self-titled, self-released album in 2016. Their second studio album “Two Part” was released in 2019. JMMJ’s newer songs emphasize themes of faith in God and loving our neighbors - in a genre of music that is often to the contrary. They combine hip/hop and electronic instruments, creating indelible sounds. Spreading God’s good word through music is their goal and passion. JMMJ brings high energy to their performances and loves to fire up the audience!</p>
-              </div>
-
-              <div class="col">
-                <h1 id="firstEncounter">First Encounter</h1>
-                <p>Enter First Encounter bio here.</p>
-              </div>
-
-            </div>
-        </div>
-      </div>
-
-      <div id="volunteer">
-        <div class="row justify-content-center">
-          <div class="col plainBackground">
-            <h1>Volunteer</h1>
-            <p><a href="#">Volunteer for Night Fire!</a></p>
-            <h5>If I volunteer, can I see/hear the concert?</h5>
-            <h5>What needs to be done?</h5>
-            <h5>Shifts</h5>
-            <h5><a href="#">Order your free Night Fire t-shirt for volunteers</a></h5>
-            <h5>What happens after I volunteer?</h5>
-            <h5>Where do I park?</h5>
-            <h5>Where do I enter?</h5>
-            <h5>Should I bring anything?</h5>
-            <p>Remember to wear your Night Fire t-shirt.</p>
-          </div>
-
-        </div>
-      </div>
-
-      <div id="about">
-        <div class="row justify-content-center">
-          <div class="col plainBackground">
-            <h1>About</h1>
-
-            <h5>What is NightFire Concerts?</h5>
-            <h5>How did it start?</h5>
-            <h5>When did it begin?</h5>
-            <h5>Who started it?</h5>
-              <p>
-                Julie Nelson
-                <img src="Images/About/JulieNelson.jpg" id="julie" alt="Julie Nelson">
-              </p>
-            <h5>Why did it begin?</h5>
-            <h5>Is it a one-time event?</h5>
-            <h5>Do you sell merchandise?</h5>
-            <h5>Why a “Pray & Worship” Concert?</h5>
-            <h5>The Music</h5>
-            <h5>Prayer Teams</h5>
-            <h5>"Let go and let God"</h5>
-
-          </div>
-        </div>
-      </div>
-
-      <div id="donate">
-        <div class="row justify-content-center">
-          <div class="col plainBackground" id="donateCol">
-            <h1>Donations</h1>
-            <h5>Is Night Fire a non-profit?</h5>
-            <h5>Are donations tax-deductible?</h5>
-            <h5>How can I help NightFire bring Christians together to pray and worship?</h5>
-            <h5>Where does the money go?</h5>
-            <h5>How do I become involved next year?</h5>
-            <h5>Can I donate year-round?</h5>
-          </div>
-        </div>
-      </div>
-
-      <div id="info">
-        <div class="row justify-content-center">
-          <div class="col plainBackground" id="infoCol">
-            <h1>Information</h1>
-            <h6>Location</h6>
-            <div style="overflow:hidden;max-width:100%;width:500px;height:500px;">
-              <div style="height:100%; width:100%;max-width:100%;">
-                <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=4100+Mills+Civic+Parkway,+West+Des+Moines,+IA&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-              </div>
-            </div>
-            <h6>Site Map</h6>
-            <h6>Parking</h6>
-              <a href="https://www.wdm.iowa.gov/home/showpublisheddocument?id=32675">Click here or see below</a>
-              <br>
-              <img src="Images/Info/amphitheaterMap.jpg" class="img-fluid" alt="Amphitheater">
-            <h6>Enter/Exit</h6>
-            <h6>No Alcohol</h6>
-            <p>Can bring *small* soft-sided coolers or over-the-shoulder coolers.</p>
-            <h6 id="foodTrucks">Food Trucks</h6>
-          </div>
-        </div>
-      </div>
-
-      <div id="covid">
-        <div class="row justify-content-center">
-          <div class="col plainBackground">
-            <h1>COVID-19 Precautions</h1>
-          </div>
-        </div>
-      </div>
 
     </div>
 
@@ -256,22 +117,32 @@
     <footer class="footer padBottom">
       <div class="container">
         <a class="padBetween" href="index.html">Home</a>
-        <a class="padBetween" href="index.html#tickets">Tickets</a>
-        <a class="padBetween" href="index.html#music">Music</a>
-        <a class="padBetween" href="index.html#donate">Donate</a>
+        <a class="padBetween" href="index.html#about">About</a>
         <a class="padBetween" href="index.html#info">Info</a>
+        <a class="padBetween" href="index.html#covid">COVID-19</a>
+        <a class="padBetween" href="index.html#info">Location</a>
+        <a class="padBetween" href="index.html#music">FAQ</a>
+        <a class="padBetween" href="index.html#foodTrucks">Food</a>
+        <a class="padBetween" href="index.html#sponsors">Sponsors</a>
+        <a class="padBetween" href="index.html#music">Music</a>
+        <a class="padBetween" href="index.html#volunteer">Volunteer</a>
+        <a class="padBetween" href="index.html#tickets">Tickets</a>
+        <a class="padBetween" href="index.html#donate">Donate</a>
       </div>
     </footer>
   </body>
   <script type="text/javascript">
     var navigation = document.getElementById('navigation');
+    var mainContent = document.getElementById('mainContent');
     var alertMessage = document.getElementById('alertMessage');
     if(alertMessage.classList.contains('show')){
       navigation.style.marginTop = '50px';
+      mainContent.style.marginTop = '50px';
     }
 
     function moveNavUp(){
       navigation.style.marginTop = '0px';
+      mainContent.style.marginTop = '0px';
     }
   </script>
 </html>
