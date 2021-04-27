@@ -8,9 +8,6 @@
     <link rel="icon" type="image/x-icon" href="Images/Logo/guitar.png">
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   </head>
 
   <body>
@@ -66,12 +63,68 @@
         <div class="row justify-content-center">
           <div class="col plainBackground" id="donateCol">
             <h1>Donations</h1>
-            <h5>Is Night Fire a non-profit?</h5>
-            <h5>Are donations tax-deductible?</h5>
-            <h5>How can I help NightFire bring Christians together to pray and worship?</h5>
-            <h5>Where does the money go?</h5>
-            <h5>How do I become involved next year?</h5>
-            <h5>Can I donate year-round?</h5>
+            <br>
+            <h2>Want More Music?</h2>
+            <h3><a href="#"></a>Donate to Night Fire Concerts!</a></h3>
+            <p><i>Relies on donations and volunteers to plan, implement and promote the concert.</i></p>
+            <br>
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Are donations to Night Fire deductible?
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item">Night Fire is registered in Iowa as a non-profit organization.</li>
+                      <li class="list-group-item">An EIN is available upon request by emailing info@nightfireconcerts.org.</li>
+                      <li class="list-group-item">IRS tax exempt states under code 501 c (3) is pending.</li>
+                      <li class="list-group-item">Please consult your personal tax advisor regarding deductiblity.</li>
+                      <li class="list-group-item">As required, all donations of $250.00 or more will receive tax receipts.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Can I use a Charitable Gift Fund?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item">Yes - Donations from Charitable Gift Funds are happily accepted.</li>
+                      <li class="list-group-item">Please email info@nightfireconcerts.org to obtain information necessary to complete this type of transaction.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="headingThree">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      How Are Donations Used?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item">Funds are used to pay all expenses associated with the Night Fire Concert. Includes: facility and equipment rental; licenses, fees, and insurance; musician compensation, food, and lodging; printing, and signage.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -94,5 +147,8 @@
       <a class="padBetween" href="donate.html">Donate</a>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 </body>
 </html>
