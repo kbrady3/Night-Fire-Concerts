@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Title</title>
+    <title>Volunteer at Night Fire</title>
     <link rel="icon" type="image/x-icon" href="Images/Logo/guitar.png">
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -61,15 +61,54 @@
           <div class="col plainBackground">
             <h1>Volunteer</h1>
             <p><a href="#">Volunteer for Night Fire!</a></p>
-            <h5>If I volunteer, can I see/hear the concert?</h5>
-            <h5>What needs to be done?</h5>
-            <h5>Shifts</h5>
-            <h5><a href="#">Order your free Night Fire t-shirt for volunteers</a></h5>
-            <h5>What happens after I volunteer?</h5>
-            <h5>Where do I park?</h5>
-            <h5>Where do I enter?</h5>
-            <h5>Should I bring anything?</h5>
-            <p>Remember to wear your Night Fire t-shirt.</p>
+            <button type="button" class="btn btn-primary">Volunteer</button>
+            <br><br>
+            <div id="accordion">
+              <div class="card">
+                <div class="card-header" id="park">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapsePark" aria-expanded="true" aria-controls="collapsePark">
+                      Where do I park?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapsePark" class="collapse show" aria-labelledby="park" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>Valley Southwoods parking lot</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="enter">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseEnter" aria-expanded="true" aria-controls="collapseEnter">
+                      Where do I enter?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseEnter" class="collapse show" aria-labelledby="enter" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>Follow the path north from the Southwoods lot. Enter through the SW corner of the Amphitheater. Look for the Volunteer Check-in tent.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="bring">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseBring" aria-expanded="false" aria-controls="collapseBring">
+                      Should I bring anything?
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseBring" class="collapse" aria-labelledby="bring" data-parent="#accordion">
+                  <div class="card-body">
+                    <p>Sunglasses, bug spray, comfortable shoes, water bottle.</p>
+                    <p>Wear Your Night Fire T-shirts!</p>
+                    <p><i>Water and snacks are available for volunteers.</i></p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
