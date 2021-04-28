@@ -1,33 +1,42 @@
 body{
   color: white;
-}
-
-/*
-#backgroundVideo {
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-*/
-
-#welcome{
-  margin-top: 10%;
-}
-
-#introducing{
-  margin-top: 60%;
+  /*
+  background-image: url("Images/nightSky.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  */
 }
 
 #artistsHome{
-  margin-top: 30%;
+  margin-top: 150px;
 }
 
 #julie{
   width: 25%;
   margin-right: 10px;
 }
+
+.greatVibes{
+  font-family: 'Great Vibes', cursive;
+}
+
+/*
+.navbar{
+  height: 300px;
+}
+
+.navbar-brand {
+    position: absolute;
+    left: 50%;
+    margin-top: -200px;
+    margin-left: -50px !important;
+    display: block;
+}
+
+.navbar-nav{
+  margin-top: -100px;
+}
+*/
 
 .plainBackground{
   /*background-color: #3a3a3a;
