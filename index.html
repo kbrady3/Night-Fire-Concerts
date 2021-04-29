@@ -62,6 +62,11 @@
         </ul>
       </div>
     </nav>
+    <!--
+    <div class="socialNav fixed-top" id="socialNav">
+      <img src="Images/instagram.png" id="instagram" alt="Instagram">
+    </div>-->
+
 
     <div class="container-fluid" id="mainContent">
 
@@ -119,9 +124,12 @@
     var navigation = document.getElementById('navigation');
     var mainContent = document.getElementById('mainContent');
     var alertMessage = document.getElementById('alertMessage');
+    var socialNav = document.getElementById('socialNav');
+
     if(alertMessage.classList.contains('show')){
-      navigation.style.marginTop = '50px';
-      mainContent.style.marginTop = '50px';
+      navigation.style.marginTop = '20px';
+      mainContent.style.marginTop = '20px';
+      socialNav.style.display = 'none';
     }
 
     function moveNavUp(){
