@@ -52,12 +52,11 @@ body{
   width: 100%;
   height: 100%;
 }
-
+/*
 .navbar-nav, .navbar-brand{
   margin-top: 30px;
 }
 
-/*
 .navbar{
   height: 300px;
 }
