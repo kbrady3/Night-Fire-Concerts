@@ -2,7 +2,6 @@ body{
   color: white;
   background-image: url("Images/trial2.png");
   background-size: cover;
-  background-repeat: no-repeat;
 }
 
 #artistsHome{
@@ -70,7 +69,7 @@ body{
   background-color: white;
 }
 
-.navbar-nav, .navbar-brand, .container-fluid{
+.navbar-nav, .navbar-brand, .container-fluid, .navbar-toggler{
   margin-top: 30px;
 }
 
