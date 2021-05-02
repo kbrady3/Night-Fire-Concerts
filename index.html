@@ -13,14 +13,9 @@
   </head>
 
   <body>
-    <div class="alert fixed-top alert-primary alert-dismissible fade show" role="alert" id="alertMessage">
-      <a href="#"><strong>Click here</strong> for free tickets and Night Fire Concert updates!</a>
-      <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="moveNavUp()">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
+
     <nav class="navbar fixed-top navbar-expand-md navbar-light navBackground" id="navigation">
-      <a class="navbar-brand" href="index.html"><img src="Images/Logo/blackHorizontal.png" style="width:250px" alt="Logo"></a>
+      <a class="navbar-brand" href="index.html"><img src="Images/Logo/blackTextOnlyLogo.png" style="width:200px" alt="Logo"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <span class="navbar-toggler-icon navbar-light"></span>
       </button>
@@ -62,11 +57,15 @@
         </ul>
       </div>
     </nav>
-    <!--
     <div class="socialNav fixed-top" id="socialNav">
-      <img src="Images/instagram.png" id="instagram" alt="Instagram">
-    </div>-->
-
+      <a href="https://www.instagram.com/nightfireconcerts/"><img src="Images/instagram.png" id="instagram" alt="Instagram"></a>
+    </div>
+    <div class="alert fixed-top alert-primary alert-dismissible fade show" role="alert" id="alertMessage">
+      <a href="#"><strong>Click here</strong> for free tickets and Night Fire Concert updates!</a>
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close" onclick="moveNavUp()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
 
     <div class="container-fluid" id="mainContent">
 
@@ -75,7 +74,7 @@
         <div class="row justify-content-center">
           <div class="col-11 text-center">
             <h1 class="greatVibes">Matt Maher || June 12, 2021</h1>
-            <a href="music.html#maher"><img class="img-fluid" src="Images/MattMaher/maher1.jpg" alt="Matt Maher"></a>
+            <a href="music.html#maher"><img class="img-fluid" src="Images/MattMaher/maher1.jpg" alt="Matt Maher" id="maherPic"></a>
           </div>
         </div>
         <br>
@@ -127,7 +126,7 @@
     //var socialNav = document.getElementById('socialNav');
 
     if(alertMessage.classList.contains('show')){
-      navigation.style.marginTop = '50px';
+      navigation.style.marginTop = '20px';
       mainContent.style.marginTop = '50px';
       //socialNav.style.display = 'none';
     }

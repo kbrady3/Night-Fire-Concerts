@@ -1,10 +1,8 @@
 body{
   color: white;
-  /*
-  background-image: url("Images/nightSky.jpg");
+  background-image: url("Images/trial2.png");
   background-size: cover;
   background-repeat: no-repeat;
-  */
 }
 
 #artistsHome{
@@ -16,6 +14,10 @@ body{
   margin-right: 10px;
 }
 
+#maherPic{
+  border-radius: 5px;
+}
+
 #instagram{
   width: 20px;
   float: right;
@@ -23,8 +25,19 @@ body{
   margin-top: 5px;
 }
 
+.bgWhite{
+  background-color: rgba(255, 255, 255, 0.5) !important;
+  border-radius: 5px;
+}
+
+.bgDarkBlue{
+  background-color: #3c3d57 !important;
+  color: white !important;
+  border-radius: 5px;
+}
+
 .socialNav{
-  background-color: #090067;
+  background-color: #3c3d57;
   width: 100%;
   height: 30px;
 }
@@ -52,11 +65,16 @@ body{
   width: 100%;
   height: 100%;
 }
-/*
-.navbar-nav, .navbar-brand{
+
+.navBackground{
+  background-color: white;
+}
+
+.navbar-nav, .navbar-brand, .container-fluid{
   margin-top: 30px;
 }
 
+/*
 .navbar{
   height: 300px;
 }
