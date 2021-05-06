@@ -7,6 +7,7 @@
     <title>Night Fire Concerts Info</title>
     <link rel="icon" type="image/x-icon" href="Images/Logo/guitar.png">
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
+    <script type="text/javascript" src="javascript.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   </head>
 
@@ -58,6 +59,7 @@
     </nav>
     <div class="socialNav fixed-top" id="socialNav">
       <a href="https://www.instagram.com/nightfireconcerts/"><img src="Images/instagram.png" id="instagram" alt="Instagram"></a>
+      <a href="https://www.facebook.com/events/205958794464713/"><img src="Images/facebook.png" id="facebook" alt="Facebook"></a>
     </div>
 
     <div class="container-fluid padTop" id="mainContent">
@@ -65,12 +67,13 @@
         <div class="row justify-content-center">
           <div class="col plainBackground">
             <h1>Frequently Asked Questions</h1>
+            <p><em>Click on a topic to show details</em></p>
             <br>
             <div id="accordion">
               <div class="card">
                 <div class="card-header" id="covid">
                   <h5 class="mb-0 text-center">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseCovid" aria-expanded="true" aria-controls="collapseCovid">
+                    <button id="covidBtn" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseCovid" aria-expanded="true" aria-controls="collapseCovid">
                       COVID-19 Protocols
                     </button>
                   </h5>
@@ -89,7 +92,7 @@
               <div class="card">
                 <div class="card-header" id="location">
                   <h5 class="mb-0 text-center">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseLocation" aria-expanded="false" aria-controls="collapseLocation">
+                    <button id="locationBtn" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseLocation" aria-expanded="false" aria-controls="collapseLocation">
                       Location
                     </button>
                   </h5>
@@ -105,9 +108,47 @@
                 </div>
               </div>
               <div class="card">
+                <div class="card-header" id="whatToBring">
+                  <h5 class="mb-0 text-center">
+                    <button id="whatToBringBtn" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseWhatToBring" aria-expanded="false" aria-controls="collapseWhatToBring">
+                      What To Bring
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseWhatToBring" class="collapse" aria-labelledby="whatToBring" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item text-center">Tickets</li>
+                      <li class="list-group-item text-center">Water</li>
+                      <li class="list-group-item text-center">Bug spray</li>
+                      <li class="list-group-item text-center">Camp or lawn chairs only! No blankets or lounge chairs</li>
+                      <li class="list-group-item text-center">Small, soft-sided or over-the-shoulder soft coolers. No rolling or hard-sided coolers</li>
+                      <li class="list-group-item text-center"><strong>West Des Moines City Campus is alcohol and tobacco free.</strong></li>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header" id="foodTrucks">
+                  <h5 class="mb-0 text-center">
+                    <button id="foodTrucksBtn" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFoodTrucks" aria-expanded="false" aria-controls="collapseFoodTrucks">
+                      Food Trucks
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseFoodTrucks" class="collapse" aria-labelledby="foodTrucks" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul class="list-group">
+                      <li class="list-group-item text-center">Roadside Taco</li>
+                      <li class="list-group-item text-center">Totally Rolled</li>
+                      <li class="list-group-item text-center">No alcohol is allowed on WDM City property.</li>
+                      <li class="list-group-item text-center">Onsite from 5:15 p.m. - MC will announce end time.</li>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
                 <div class="card-header" id="parking">
                   <h5 class="mb-0 text-center">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseParking" aria-expanded="false" aria-controls="collapseParking">
+                    <button id="parkingBtn" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseParking" aria-expanded="false" aria-controls="collapseParking">
                       Parking
                     </button>
                   </h5>
@@ -129,7 +170,7 @@
                 <div class="card">
                   <div class="card-header" id="seating">
                     <h5 class="mb-0 text-center">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeating" aria-expanded="false" aria-controls="collapseSeating">
+                      <button id="seatingBtn" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeating" aria-expanded="false" aria-controls="collapseSeating">
                         Seating
                       </button>
                     </h5>
@@ -149,47 +190,9 @@
                   </div>
                 </div>
                 <div class="card">
-                  <div class="card-header" id="whatToBring">
-                    <h5 class="mb-0 text-center">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseWhatToBring" aria-expanded="false" aria-controls="collapseWhatToBring">
-                        What To Bring
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseWhatToBring" class="collapse" aria-labelledby="whatToBring" data-parent="#accordion">
-                    <div class="card-body">
-                      <ul class="list-group">
-                        <li class="list-group-item text-center">Tickets</li>
-                        <li class="list-group-item text-center">Water</li>
-                        <li class="list-group-item text-center">Bug spray</li>
-                        <li class="list-group-item text-center">Camp or lawn chairs only! No blankets or lounge chairs</li>
-                        <li class="list-group-item text-center">Small, soft-sided or over-the-shoulder soft coolers. No rolling or hard-sided coolers</li>
-                        <li class="list-group-item text-center"><strong>West Des Moines City Campus is alcohol and tobacco free.</strong></li>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header" id="foodTrucks">
-                    <h5 class="mb-0 text-center">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFoodTrucks" aria-expanded="false" aria-controls="collapseFoodTrucks">
-                        Food Trucks
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseFoodTrucks" class="collapse" aria-labelledby="foodTrucks" data-parent="#accordion">
-                    <div class="card-body">
-                      <ul class="list-group">
-                        <li class="list-group-item text-center">Roadside Taco</li>
-                        <li class="list-group-item text-center">Totally Rolled</li>
-                        <li class="list-group-item text-center">No alcohol is allowed on WDM City property.</li>
-                        <li class="list-group-item text-center">Onsite from 5:15 p.m. - MC will announce end time.</li>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
                   <div class="card-header" id="contact">
                     <h5 class="mb-0 text-center">
-                      <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseContact" aria-expanded="false" aria-controls="collapseContact">
+                      <button id="contactBtn" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseContact" aria-expanded="false" aria-controls="collapseContact">
                         Contact
                       </button>
                     </h5>
@@ -227,6 +230,30 @@
       <a class="padBetween" href="donate.html">Donate</a>
     </div>
   </footer>
+  <script type="text/javascript">
+    /*Tells the page to open details for specified card if the URL points to that card, so if you're on index.html and navigate to faq.html#covid via the navbar, it will open up the details for Covid.*/
+    if(window.location.href.indexOf('faq.html#covid') > 0) {
+      openCard(document.getElementById('covidBtn'), document.getElementById('collapseCovid'));
+    }
+    else if(window.location.href.indexOf('faq.html#location') > 0){
+      openCard(document.getElementById('locationBtn'), document.getElementById('collapseLocation'));
+    }
+    else if(window.location.href.indexOf('faq.html#whatToBring') > 0){
+      openCard(document.getElementById('whatToBringBtn'), document.getElementById('collapseWhatToBring'));
+    }
+    else if(window.location.href.indexOf('faq.html#foodTrucks') > 0){
+      openCard(document.getElementById('foodTrucksBtn'), document.getElementById('collapseFoodTrucks'));
+    }
+    else if(window.location.href.indexOf('faq.html#parking') > 0){
+      openCard(document.getElementById('parkingBtn'), document.getElementById('collapseParking'));
+    }
+    else if(window.location.href.indexOf('faq.html#seating') > 0){
+      openCard(document.getElementById('seatingBtn'), document.getElementById('collapseSeating'));
+    }
+    else if(window.location.href.indexOf('faq.html#contact') > 0){
+      openCard(document.getElementById('contactBtn'), document.getElementById('collapseContact'));
+    }
+  </script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
