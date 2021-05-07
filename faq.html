@@ -51,8 +51,10 @@
               <a class="nav-link" href="faq.html#foodTrucks">Food</a>
               <a class="nav-link" href="faq.html#parking">Parking</a>
               <a class="nav-link" href="faq.html#seating">Seating</a>
-              <a class="nav-link" href="faq.html#contact">Contact</a>
             </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -189,21 +191,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="card">
-                  <div class="card-header" id="contact">
-                    <h5 class="mb-0 text-center">
-                      <button id="contactBtn" class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseContact" aria-expanded="false" aria-controls="collapseContact">
-                        Contact
-                      </button>
-                    </h5>
-                  </div>
-                  <div id="collapseContact" class="collapse" aria-labelledby="contact" data-parent="#accordion">
-                    <div class="card-body">
-                      <ul class="list-group">
-                        <li class="list-group-item text-center">Please email info@nightlifeconcerts.org with questions or comments.</li>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -224,6 +211,7 @@
       <a class="padBetween" href="donate.html">Donate</a>
       <a class="padBetween" href="sponsors.html">Sponsors</a>
       <a class="padBetween" href="faq.html">FAQ</a>
+      <a class="padBetween" href="contact.html">Contact</a>
     </div>
   </footer>
   <script type="text/javascript">
@@ -245,9 +233,6 @@
     }
     else if(window.location.href.indexOf('faq.html#seating') > 0){
       openCard(document.getElementById('seatingBtn'), document.getElementById('collapseSeating'));
-    }
-    else if(window.location.href.indexOf('faq.html#contact') > 0){
-      openCard(document.getElementById('contactBtn'), document.getElementById('collapseContact'));
     }
   </script>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

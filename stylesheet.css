@@ -130,19 +130,19 @@ body{
   }
 }
 
-@media screen and (max-width: 1015px) {
+@media screen and (max-width: 1100px) {
   .nav-item{
     padding: 10px;
   }
 }
 
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1015px) {
   .nav-item{
     padding: 5px;
   }
 }
 
-@media screen and (max-width: 860px) {
+@media screen and (max-width: 930px) {
   .nav-item{
     padding: 0px;
   }
