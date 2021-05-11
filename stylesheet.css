@@ -54,6 +54,30 @@ body{
   font-family: 'Great Vibes', cursive;
 }
 
+.linksDarkBlue a:link{
+  color: #3c3d57 !important;
+}
+
+.linksDarkBlue a:visited{
+  color: #3c3d57 !important;
+}
+
+.linksDarkBlue a:hover{
+  color: #3c3d57 !important;
+}
+
+.linksWhite a:link{
+  color: white !important;
+}
+
+.linksWhite a:visited{
+  color: white !important;
+}
+
+.linksWhite a:hover{
+  color: white !important;
+}
+
 .navBackground{
   background-color: white;
 }
