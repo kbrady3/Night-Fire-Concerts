@@ -50,6 +50,10 @@ body{
   border-radius: 5px;
 }
 
+.btnLinkCustom, .btnLinkCustom:visited, .btnLinkCustom:hover{
+  color: white !important;
+}
+
 .greatVibes{
   font-family: 'Great Vibes', cursive;
 }
